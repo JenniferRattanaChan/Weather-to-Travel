@@ -1,0 +1,145 @@
+h6 {
+    border-top:1px solid #cccccc; 
+
+    padding: 5px;
+  }
+
+  #p-input {
+      padding: 0px;
+      margin: 6px 0px 1px 0px; 
+      color: darkslategray;
+      /* color: indigo; */
+  }
+
+  /* -----------------------input form------------------------- */
+
+input {
+    width: 95%;
+}
+
+input[type=text] {
+    width: 250px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 100%;
+  }
+
+/* 
+#userInput {
+  background-color: #5963AC;
+    border-radius: 25px;
+    padding: 20px;
+} */
+
+.submit-round {
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.card-input{
+  margin: 20px;
+}
+/* -------------------end of input form--------------------- */
+
+.buffer {
+    margin: 5%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+/* scroll bar */
+/* http://jsfiddle.net/q4CqZ/6/ */
+.dyn-height {
+    width:100%;
+    max-height:465px;
+    overflow-y:auto;
+  }
+
+  #table-wrapper {
+    position:relative;
+  }
+  #weather {
+    height:294px;
+    overflow:auto;  
+    margin-top:20px;
+  }
+  #table-wrapper table {
+    width:100%;
+      
+  }
+  #table-wrapper table * {
+    color:black;
+  }
+  #table-wrapper table thead th .text {
+    position:absolute;   
+    top:-20px;
+    z-index:2;
+    height:20px;
+    width:35%;
+    border:1px solid red;
+  }
+
+
+
+  #weather-output-buffer {
+    margin-top: 15px;
+  }
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+   /* .modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+} */
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+/* section.loading .modal {
+    overflow: hidden;   
+} */
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+/* section.loading .modal {
+    display: block;
+} */
+
+
+
+/* ----------------------------- */
+
+
+.wrapper {
+    position: relative;
+    
+}
+.loading:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.3) center center no-repeat url('data:image/gif;base64,R0lGODlhFAAUAKEAAO7u7lpaWgAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgACACwAAAAAFAAUAAACQZRvoIDtu1wLQUAlqKTVxqwhXIiBnDg6Y4eyx4lKW5XK7wrLeK3vbq8J2W4T4e1nMhpWrZCTt3xKZ8kgsggdJmUFACH5BAEKAAIALAcAAAALAAcAAAIUVB6ii7jajgCAuUmtovxtXnmdUAAAIfkEAQoAAgAsDQACAAcACwAAAhRUIpmHy/3gUVQAQO9NetuugCFWAAAh+QQBCgACACwNAAcABwALAAACE5QVcZjKbVo6ck2AF95m5/6BSwEAIfkEAQoAAgAsBwANAAsABwAAAhOUH3kr6QaAcSrGWe1VQl+mMUIBACH5BAEKAAIALAIADQALAAcAAAIUlICmh7ncTAgqijkruDiv7n2YUAAAIfkEAQoAAgAsAAAHAAcACwAAAhQUIGmHyedehIoqFXLKfPOAaZdWAAAh+QQFCgACACwAAAIABwALAAACFJQFcJiXb15zLYRl7cla8OtlGGgUADs=');
+}
