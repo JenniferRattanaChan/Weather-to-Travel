@@ -34,7 +34,8 @@ Enter starting location and destination to get weather forecast along your route
 * [Miro](https://miro.com) for prototyping
 
 ## APIs
-
+* Google Maps API
+* Open Weather Map API
 
 ## Team
 
